@@ -6,5 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body id="s_info">
+    <!-- Imagen en formato svg -->
+    <div class="row">
+      <div id="Imagen SVG" class="col-sm-6">
+      </div>
+    <!-- Carrusel de infomación -->
+    <div id="carruselInfo" class="carousel slide col-sm-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carruselInfo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carruselInfo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner fotos">
+        <div class="carousel-item active">
+          <img src="./assets/imagenes/pesas.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block">
+            <h1 class="text-white">Acerca de nosotros</h1>
+            <br />
+            <p class="text-white text-start">Academia de JiuJitsu, Grappling, MMA, Kick-boxing y Box.
+            Contamos con todos los servicios para mantenerte en forma y ademas aprendiendo defensa personal</p>
+          </div>
+        </div>
+        <div class="carousel-item fotos">
+          <img src="./assets/imagenes/covid.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block">
+            <h1 class="text-white">Información para socios</h1>
+            <br />
+            <p class="text-white text-start">Normas de prevención e higiene en el gimnasio</p>
+            <ol class="text-start">
+              <li>Mantén la distancia</li>
+              <li>No vengas a entrenar si tienes síntomas o sospechas de padecer COVID-19</li>
+              <li>Desinfecta tus manos y las máquinas</li>
+              <li>Entrena siempre con tu propia toalla</li>
+              <li>El cubrebocas es obligatorio</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselInfo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselInfo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
   </body>
-</html>
+  </html>

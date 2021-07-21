@@ -1,3 +1,7 @@
+#s_info .fotos img {
+  object-fit: cover;
+}
+
 #s_clases #programas h2:hover {
   color: white !important;
   background-color: black !important;
