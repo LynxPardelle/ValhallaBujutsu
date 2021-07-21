@@ -1,3 +1,5 @@
+'use strict'
+
 function getBody() {
   document.body.innerHTML =
     `
