@@ -1,3 +1,13 @@
+#s_ubicacion .map {
+  overflow: hidden;
+  border-radius: 1.5%;
+  width: clamp(90%, 95vw, 100%);
+}
+#s_ubicacion .map #iIframeMap {
+  height: clamp(10rem, 40vh, 180rem);
+  width: clamp(100%, 100%, 100%);
+}
+
 /* @import "./colors.scss"; */
 .w-15 {
   width: 15% !important;
