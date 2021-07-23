@@ -1,19 +1,22 @@
-.portadaDesktop{
-    height: calc( 100vh );
-    background-image: url('/assets/images/coverDesktop.jpg')!important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-}
+#header {  
+    
+    nav {
+        transition: 500ms;
+    }
 
-.portadaMobile{
-    height: calc( 100vh );
-    background-image: url('/assets/images/coverMobile.jpg')!important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-}
-
-.fixed-top{
-    max-width: 100vw!important;
+    .portadaDesktop{
+        height: calc( 100vh );
+        background-image: url('/assets/images/coverDesktop.jpg')!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 60% 10%;
+    }
+    
+    .portadaMobile{
+        height: calc( 100vh );
+        background-image: url('/assets/images/coverMobile.jpg')!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
 }
