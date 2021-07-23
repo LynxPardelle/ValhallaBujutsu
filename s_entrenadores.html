@@ -1,116 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <!--   <body id="s_entrenadores" >
-      <div id="slider-wrapper">
-        <div class="images">
-            <img src="./Fotos/entren3.jpg">
-            <img src="./Fotos/entren2.jpg">
-            <img src="./Fotos/entren.jpg">
-            <img src="./Fotos/Desc.jpg">
-        </div>
-    </div>
-  </body> -->
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body id="s_entrenadores">
   <div class="center-align">
     <h2 class="text-blue text-decoration-underline">
       ENTRENADORES
     </h2>
   </div>
-  <body id="s_entrenadores">
-    <div class="d-flex align-items-center justify-content-center" >
-      <div id="grid">
-        <img class="imagen" src="./assets/images/entren3.jpg" alt="" onclick="showTarg('TarjetaAbajo1')" />
-        <img class="imagen" src="./assets/images/entren2.jpg" alt="" onclick="showTarg('TarjetaAbajo2')" />
+  <div class="d-flex align-items-center justify-content-center">
+    <div id="grid">
+      <img class="imagen" src="./assets/images/entren3.jpg" alt="" onclick="showTarg('TarjetaAbajo1')" />
+      <img class="imagen" src="./assets/images/entren2.jpg" alt="" onclick="showTarg('TarjetaAbajo2')" />
 
-<!--         Aquí van 2 tarjetas de cada imagen -->
+      <!--         Aquí van 2 tarjetas de cada imagen -->
 
-        <div id="TarjetaAbajo1" class="d-none p-3 TarjetaAbajo">
-          <img class="imagen" src="./assets/images/entren3.jpg" alt="" />
-          <div class="text-yellow TextInfoTarjeta text-center">
-            <h3>
-              Joel
-            </h3>
-            <div>
-              <p>
-                Clases
-              </p>
-              <ul>
-                <li>
-                  MMA
-                </li>
-              </ul>
-            </div>
+      <div id="TarjetaAbajo1" class="d-none p-3 TarjetaAbajo">
+        <img class="imagen" src="./assets/images/entren3.jpg" alt="" />
+        <div class="text-yellow TextInfoTarjeta text-center py-3">
+          <h3>
+            Joel
+          </h3>
+          <p class="m-4 p-2 text-center text-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempore, tenetur dolorum quas eum,
+            voluptatibus, debitis quam neque cumque asperiores repudiandae modi. Officia laudantium iste eum obcaecati
+            rerum sunt quas?
+          </p>
+          <div>
+            <p>
+              Clases
+            </p>
+            <ul class="d-block w-50 mx-auto my-2 list-unstyled">
+              <li class="text-start">
+                - MMA
+              </li>
+              <li class="text-start">
+                - Clase 2
+              </li>
+              <li class="text-start">
+                - Clase 3
+              </li>
+              <li class="text-start">
+                - Clase 4
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div id="TarjetaAbajo2" class="d-none p-3 TarjetaAbajo">
-          <img class="imagen" src="./assets/images/entren2.jpg" alt="" />
-          <div class="text-yellow TextInfoTarjeta text-center">
-            <h3>
-              Jorge 
-            </h3>
-            <div>
-              <p>
-                Clases
-              </p>
-              <ul>
-                <li>
-                  Jiu Jitsu
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <img class="imagen" src="./assets/images/entren.jpg" alt="" onclick="showTarg('TarjetaAbajo3')" />
-        <img class="imagen" src="./assets/images/Desc.jpg" alt="" onclick="showTarg('TarjetaAbajo4')" />
-
-<!--         Aquí van otras 2 tarjetas de cada imagen -->
-
-        <div id="TarjetaAbajo3" class="d-none p-3 TarjetaAbajo">
-          <img class="imagen" src="./assets/images/entren.jpg" alt="" />
-          <div class="text-yellow TextInfoTarjeta text-center">
-            <h3>
-              Daniel
-            </h3>
-            <div>
-              <p>
-                Clases
-              </p>
-              <ul>
-                <li>
-                  Lucha 
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div id="TarjetaAbajo4" class="d-none p-3 TarjetaAbajo">
-          <img class="imagen" src="./assets/images/Desc.jpg" alt="" />
-          <div class="text-yellow TextInfoTarjeta text-center">
-            <h3>
-              Bruno
-            </h3>
-            <div>
-              <p>
-                Clases
-              </p>
-              <ul>
-                <li>
-                  Box
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <div id="TarjetaAbajo2" class="d-none p-3 TarjetaAbajo">
+        <img class="imagen" src="./assets/images/entren2.jpg" alt="" />
+        <div class="text-yellow TextInfoTarjeta text-center">
+          <h3>
+            Jorge
+          </h3>
+          <div>
+            <p>
+              Clases
+            </p>
+            <ul>
+              <li>
+                Jiu Jitsu
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <img class="imagen" src="./assets/images/entren.jpg" alt="" onclick="showTarg('TarjetaAbajo3')" />
+      <img class="imagen" src="./assets/images/Desc.jpg" alt="" onclick="showTarg('TarjetaAbajo4')" />
+
+      <!--         Aquí van otras 2 tarjetas de cada imagen -->
+
+      <div id="TarjetaAbajo3" class="d-none p-3 TarjetaAbajo">
+        <img class="imagen" src="./assets/images/entren.jpg" alt="" />
+        <div class="text-yellow TextInfoTarjeta text-center">
+          <h3>
+            Daniel
+          </h3>
+          <div>
+            <p>
+              Clases
+            </p>
+            <ul>
+              <li>
+                Lucha
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="TarjetaAbajo4" class="d-none p-3 TarjetaAbajo">
+        <img class="imagen" src="./assets/images/Desc.jpg" alt="" />
+        <div class="text-yellow TextInfoTarjeta text-center">
+          <h3>
+            Bruno
+          </h3>
+          <div>
+            <p>
+              Clases
+            </p>
+            <ul>
+              <li>
+                Box
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

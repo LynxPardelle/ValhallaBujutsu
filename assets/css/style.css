@@ -86,7 +86,111 @@
 #s_entrenadores .TarjetaAbajo .TextInfoTarjeta {
   width: 50%;
 }
+#s_entrenadores .TextInfoTarjeta h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#s_entrenadores .TextInfoTarjeta p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+#s_entrenadores .TextInfoTarjeta ul {
+  list-style: lower-roman;
+}
 
+#s_media {
+  /* 
+  body {
+    padding: 30rem 0;
+    position: relative;
+  }
+
+  .Media {
+    width: 600rem;
+    margin: auto;
+    border-radius: 3rem;
+    overflow: hidden;
+    //position: relative;
+  }
+  .Med-img-c {
+    width: 200rem;
+    height: 200rem;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .Med-img-w {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform ease-in-out 300ms;
+  }
+
+  .Med-img-w img {
+    display: none;
+  }
+
+  .Med-img-c {
+      transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+  }
+
+  .Med-img-c:hover .img-w {
+    transform: scale(1.08);
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+  }
+
+  .Med-img-c.active {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    z-index: 2;
+    //transform: translateX(-50%);
+  }
+
+  .Med-img-c.postactive {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .Med-img-c.active.positioned {
+    left: 0 !important;
+    top: 0 !important;
+    transition-delay: 50ms;
+  }
+
+   */
+}
+#s_media .titulo {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+}
+#s_media .galeria {
+  /* .col {
+    margin-bottom: 20rem;
+  } */
+}
+#s_media .galeria .galeria-modal-btn img {
+  box-shadow: 0.5rem 1rem 1rem rgba(151, 3, 3, 0.6);
+  border-radius: 1rem;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media only screen and (min-width: 576px) {
+  .galeria .galeria-modal-btn img {
+    width: 500px !important;
+    height: 500px !important;
+  }
+}
 #footer .wowLinks:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -109,6 +213,10 @@
 
 .text-udark {
   color: #050607 !important;
+}
+
+.text-ghost {
+  color: rgba(0, 0, 0, 0) !important;
 }
 
 .bg-red {
@@ -149,6 +257,16 @@ a.bg-udark:hover, a.bg-udark:focus,
 button.bg-udark:hover,
 button.bg-udark:focus {
   background-color: black !important;
+}
+
+.bg-ghost {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+a.bg-ghost:hover, a.bg-ghost:focus,
+button.bg-ghost:hover,
+button.bg-ghost:focus {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .w-5 {

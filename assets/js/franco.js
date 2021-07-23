@@ -18,7 +18,7 @@ function showTarg(id) {
     "TarjetaAbajo4",
   ];
   for (let elementId of OtherTarTeach) {
-    if (!elementId === id) {
+    if (elementId !== id) {
       let TarTeach1 = document.getElementById(elementId);
       if (TarTeach1.className.indexOf("d-flex") > -1) {
           TarTeach1.classList.remove("d-flex");
@@ -78,7 +78,7 @@ $(document).on("click", ".img-c.active", function() {
 
 
 
-
+/* 
 document.addEventListener('DOMContentLoaded', () => {
   const imgLightBox= document.querySelectorAll ('.materialboxed');
   M.Materialbox.init(imgLightBox, {
@@ -86,5 +86,5 @@ document.addEventListener('DOMContentLoaded', () => {
     outDuration: 1000
   })
 } )
-
+ */
 

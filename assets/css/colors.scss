@@ -2,6 +2,7 @@ $fullRed: #f94f4f;
 $fullYellow: #f9c24f;
 $fullBlue: #4f4ff9; 
 $ultraDark: #050607;
+$transparent: rgba(0,0,0,0);
 
 $colors: () !default;
 
@@ -11,6 +12,7 @@ $colors: map-merge(
     "fullYellow": $fullYellow,
     "fullBlue": $fullBlue,
     "super-dark": $ultraDark,
+    "transparent": $transparent,
   ),
   $colors
 );
@@ -19,6 +21,7 @@ $red: $fullRed !default;
 $yellow: $fullYellow !default;
 $blue: $fullBlue !default;
 $udark: $ultraDark !default;
+$ghost: $transparent !default;
 
 $theme-colors: () !default;
 
@@ -28,6 +31,7 @@ $theme-colors: map-merge(
     "yellow": $yellow,
     "blue": $blue,
     "udark": $udark,
+    "ghost": $ghost,
   ),
   $theme-colors
 );
