@@ -1,2 +1,97 @@
 #s_media {
+  /* 
+body {
+  padding: 30rem 0;
+  position: relative;
+}
+
+.Media {
+  width: 600rem;
+  margin: auto;
+  border-radius: 3rem;
+  overflow: hidden;
+  //position: relative;
+}
+.Med-img-c {
+  width: 200rem;
+  height: 200rem;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.Med-img-w {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+}
+
+.Med-img-w img {
+  display: none;
+}
+
+.Med-img-c {
+    transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+
+.Med-img-c:hover .img-w {
+  transform: scale(1.08);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+.Med-img-c.active {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 2;
+  //transform: translateX(-50%);
+}
+
+.Med-img-c.postactive {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.Med-img-c.active.positioned {
+  left: 0 !important;
+  top: 0 !important;
+  transition-delay: 50ms;
+}
+
+ */
+
+  .titulo {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+  }
+
+  .galeria {
+    .galeria-modal-btn {
+      img {
+        box-shadow: 0.5rem 1rem 1rem rgba($color: rgb(185, 17, 17), $alpha: 0.6);
+        border-radius: 1rem;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    /* .col {
+      margin-bottom: 20rem;
+    } */
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .galeria .galeria-modal-btn img {
+    width: 500px !important;
+    height: 500px !important;
+  }
 }
