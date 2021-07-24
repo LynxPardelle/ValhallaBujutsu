@@ -42,6 +42,7 @@ function getBody() {
 }
 function getHeader() {
   document.getElementById("header").innerHTML = document.getElementById("header_iframe").contentWindow.document.getElementById("header").innerHTML;
+  headerNavReady();
 }
 function getSInfo() {
   document.getElementById("s_info").innerHTML = document.getElementById("section_info_iframe").contentWindow.document.getElementById("s_info").innerHTML;
