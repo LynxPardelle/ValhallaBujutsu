@@ -87,12 +87,12 @@
   width: 50%;
 }
 #s_entrenadores .TextInfoTarjeta h3 {
-  font-size: 20rem;
+  font-size: 2rem;
   font-weight: bold;
   text-decoration: underline;
 }
 #s_entrenadores .TextInfoTarjeta p {
-  font-size: 10rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -164,18 +164,30 @@
    */
 }
 #s_media .titulo {
-  font-size: 35rem;
+  font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: 5rem;
+  letter-spacing: 1.5rem;
 }
-#s_media .galeria img {
-  box-shadow: 0 8rem 10rem -5rem rgba(0, 0, 0, 0.6);
-  border-radius: 15rem;
+#s_media .galeria {
+  /* .col {
+    margin-bottom: 20rem;
+  } */
 }
-#s_media .galeria .col {
-  margin-bottom: 20rem;
+#s_media .galeria .galeria-modal-btn img {
+  box-shadow: 0.5rem 1rem 1rem rgba(185, 17, 17, 0.6);
+  border-radius: 1rem;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
+@media only screen and (min-width: 576px) {
+  .galeria .galeria-modal-btn img {
+    width: 500px !important;
+    height: 500px !important;
+  }
+}
 #footer .wowLinks:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -198,6 +210,10 @@
 
 .text-udark {
   color: #050607 !important;
+}
+
+.text-ghost {
+  color: rgba(0, 0, 0, 0) !important;
 }
 
 .bg-red {
@@ -238,6 +254,16 @@ a.bg-udark:hover, a.bg-udark:focus,
 button.bg-udark:hover,
 button.bg-udark:focus {
   background-color: black !important;
+}
+
+.bg-ghost {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+a.bg-ghost:hover, a.bg-ghost:focus,
+button.bg-ghost:hover,
+button.bg-ghost:focus {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .w-5 {
