@@ -1,5 +1,14 @@
 #header {  
     
+    #ul1{
+        li{
+            a:hover{
+                background-color: rgba(0,0,0,.2);
+                border-radius: 20px;;
+            }
+        }
+    }
+    
     nav {
         transition: 500ms;
     }

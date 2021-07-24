@@ -73,7 +73,50 @@ $px: 0px;
 
 @mixin font-size-variant($parent, $size) {
 	#{$parent} {
-		font-size: $size !important;
+		font-size: $size;
+	}
+}
+
+@mixin font-size-25-variant($parent, $size) {
+	@media only screen and (min-width: 576px) {
+		#{$parent} {
+			font-size: $size !important;
+		}
+	}
+
+	$size: $size / 4;
+
+	#{$parent} {
+		font-size: $size;
+	}
+}
+
+@mixin font-size-50-variant($parent, $size) {
+	@media only screen and (min-width: 576px) {
+		#{$parent} {
+			font-size: $size !important;
+		}
+	}
+
+	$size: $size / 2;
+
+	#{$parent} {
+		font-size: $size;
+	}
+}
+
+@mixin font-size-75-variant($parent, $size) {
+	@media only screen and (min-width: 576px) {
+		#{$parent} {
+			font-size: $size !important;
+		}
+	}
+
+	$size: $size / 4;
+	$size: $size * 3;
+
+	#{$parent} {
+		font-size: $size;
 	}
 }
 
@@ -84,107 +127,128 @@ $px: 0px;
 }
 
 @each $size, $value in $sizes {
-  $value: $value + $percent;
+	$value: $value + $percent;
 	@include width-variant(".w-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value + $vw;
+	$value: $value + $vw;
 	@include width-variant(".w-#{$size}vw", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value / 100 * 5;
-  $value: $value + $rem;
-  $size: $value * 100;
+	$value: $value / 100 * 5;
+	$value: $value + $rem;
+	$size: $value * 100;
 	@include width-variant(".w-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value * 5;
-  $value: $value + $px;
-  $size: $value;
+	$value: $value * 5;
+	$value: $value + $px;
+	$size: $value;
 	@include min-width-variant(".w-min-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value * 5;
-  $value: $value + 500;
-  $value: $value + $px;
-  $size: $value;
+	$value: $value * 5;
+	$value: $value + 500;
+	$value: $value + $px;
+	$size: $value;
 	@include min-width-variant(".w-min-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value * 5;
-  $value: $value + $px;
-  $size: $value;
+	$value: $value * 5;
+	$value: $value + $px;
+	$size: $value;
 	@include max-width-variant(".w-max-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value * 5;
-  $value: $value + 500;
-  $value: $value + $px;
-  $size: $value;
+	$value: $value * 5;
+	$value: $value + 500;
+	$value: $value + $px;
+	$size: $value;
 	@include max-width-variant(".w-max-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value + $percent;
+	$value: $value + $percent;
 	@include height-variant(".h-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value + $vh;
+	$value: $value + $vh;
 	@include height-variant(".h-#{$size}vh", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value / 100 * 5;
-  $value: $value + $rem;
-  $size: $value * 100;
+	$value: $value / 100 * 5;
+	$value: $value + $rem;
+	$size: $value * 100;
 	@include height-variant(".h-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value * 5;
-  $value: $value + $px;
-  $size: $value;
+	$value: $value * 5;
+	$value: $value + $px;
+	$size: $value;
 	@include min-height-variant(".h-min-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value * 5;
-  $value: $value + 500;
-  $value: $value + $px;
-  $size: $value;
+	$value: $value * 5;
+	$value: $value + 500;
+	$value: $value + $px;
+	$size: $value;
 	@include min-height-variant(".h-min-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value * 5;
-  $value: $value + $px;
-  $size: $value;
+	$value: $value * 5;
+	$value: $value + $px;
+	$size: $value;
 	@include max-height-variant(".h-max-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value * 5;
-  $value: $value + 500;
-  $value: $value + $px;
-  $size: $value;
+	$value: $value * 5;
+	$value: $value + 500;
+	$value: $value + $px;
+	$size: $value;
 	@include max-height-variant(".h-max-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value / 100 * 5;
-  $size: $value * 100;
-  $value: $value + $rem;
+	$value: $value / 100 * 5;
+	$size: $value * 100;
+	$value: $value + $rem;
 	@include font-size-variant(".fs-#{$size}", $value);
 }
 
 @each $size, $value in $sizes {
-  $value: $value + $px;
+	$value: $value / 100 * 5;
+	$size: $value * 100;
+	$value: $value + $rem;
+	@include font-size-25-variant(".fs-#{$size}-25", $value);
+}
+
+@each $size, $value in $sizes {
+	$value: $value / 100 * 5;
+	$size: $value * 100;
+	$value: $value + $rem;
+	@include font-size-50-variant(".fs-#{$size}-50", $value);
+}
+
+@each $size, $value in $sizes {
+	$value: $value / 100 * 5;
+	$size: $value * 100;
+	$value: $value + $rem;
+	@include font-size-75-variant(".fs-#{$size}-75", $value);
+}
+
+@each $size, $value in $sizes {
+	$value: $value + $px;
 	@include rounded-variant(".rounded-#{$size}", $value);
 }
