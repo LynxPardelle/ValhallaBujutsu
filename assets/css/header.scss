@@ -1,0 +1,22 @@
+#header {  
+    
+    nav {
+        transition: 500ms;
+    }
+
+    .portadaDesktop{
+        height: calc( 100vh );
+        background-image: url('/assets/images/coverDesktop.jpg')!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 60% 10%;
+    }
+    
+    .portadaMobile{
+        height: calc( 100vh );
+        background-image: url('/assets/images/coverMobile.jpg')!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+}
